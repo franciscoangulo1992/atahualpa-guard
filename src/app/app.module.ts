@@ -7,6 +7,8 @@ import { PorDepartamentoComponent } from './pages/por-departamento/por-departame
 import { VerResidenteComponent } from './pages/ver-residente/ver-residente.component';
 import { ConfiguracionComponent } from './pages/configuracion/configuracion.component';
 import { SharedModule } from './shared/shared.module';
+import { AppRoutingModule } from './app-routing.module';
+import { VisitasComponent } from './pages/visitas/visitas.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { SharedModule } from './shared/shared.module';
     PorNombreComponent,
     PorDepartamentoComponent,
     VerResidenteComponent,
-    ConfiguracionComponent
+    ConfiguracionComponent,
+    VisitasComponent
   ],
   imports: [
     BrowserModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
